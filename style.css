@@ -1,0 +1,91 @@
+/* resets */
+
+body,
+p {
+  margin: 0;
+  color: white;
+}
+
+body {
+  font-size: 15px;
+  /* font-family: 'Big Shoulders Display', cursive; */
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.sedans-container {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv-container {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-container {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.type {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 36px;
+  margin: 20px 0px;
+}
+
+.container a {
+  text-decoration: none;
+  padding: 10px 50px;
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: white;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.container a:hover {
+  color: white;
+}
+
+.sedans-container a {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedans-container a:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv-container a {
+  color: hsl(184, 100%, 22%);
+}
+
+.suv-container a:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-container a {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury-container a:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (min-width: 1440px) {
+  main {
+    flex-direction: row;
+  }
+}
